@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+google = "*"
+google-api-python-client = "*"
+google-auth-httplib2 = "*"
+google-auth-oauthlib = "*"
+html2text = "*"
+pydantic = "*"
+
+[dev-packages]
+pytest = "*"
+
+[requires]
+python_version = "3.8"
