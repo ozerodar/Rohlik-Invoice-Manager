@@ -4,11 +4,11 @@ This program helps divide the cost of a grocery order among multiple people by a
 
 ## Requirements
 
-This module utilizes Python 3.8 and requires that you have pip3 and pipenv installed on your computer. Additionally, you will need to provide your Gmail credentials, which can be obtained at https://console.cloud.google.com/apis/credentials. Once you have the credentials, place the `credentials.json` file in the project folder.
+This module uses Python 3.8 and requires that you have pip3 and pipenv installed on your computer. Additionally, you will need to provide your Gmail credentials, which can be obtained at https://console.cloud.google.com/apis/credentials. Once you have the credentials, place the `credentials.json` file in the project folder.
 
 ## Installation
 
-Clone the repository and install dependencies.
+Clone the repository and install dependencies:
 ```
 pipenv shell --python 3.8
 pipenv install --dev
