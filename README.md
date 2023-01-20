@@ -4,8 +4,7 @@ This program helps divide the cost of a grocery order among multiple people by a
 
 ## Requirements
 
-The module requires Python 3.8, pip3 and pipenv installed on your machine.
-It will also need your Gmail credentials (get them here: https://console.cloud.google.com/apis/credentials?project=galvanic-card-375314) and put `credentials.json` to the project folder
+This module utilizes Python 3.8 and requires that you have pip3 and pipenv installed on your computer. Additionally, you will need to provide your Gmail credentials, which can be obtained at https://console.cloud.google.com/apis/credentials?project=galvanic-card-375314. Once you have the credentials, place the `credentials.json` file in the project folder.
 
 ## Installation
 
