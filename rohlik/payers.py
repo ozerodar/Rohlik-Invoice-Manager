@@ -33,8 +33,9 @@ class Payers(list):
 
     def create_items_payer(self, item_name: str):
         payer_name = None
+        names = ', '.join([p.name for p in self])
         while not self.is_payer_valid(payer_name):
-            payer_name = input(f"Who pays for {item_name}?\n")
+            payer_name = input(f"Who pays for {item_name}? Choose from [{names}]'\n")
         return self.get_payer(payer_name)
 
     def add_shared_price(self, item_price):
