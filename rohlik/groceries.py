@@ -2,14 +2,13 @@ import re
 import json
 
 from typing import Optional
-from pathlib import Path
 
 from rohlik import PATH_DATA
 from rohlik.exceptions import TotalPriceError
 
 PATH_GROCERIES = PATH_DATA / "grocery_list.json"
 PATTERN_ITEM = r"\[Product\](.*\n?){1,3}\[(.*\n?.*)\].*\n.*?(\d+)\*\s(\d+,\d+)\sKč"
-PATTERN_DISCOUNT = r"kreditů"
+PATTERN_DISCOUNT = r"\+\s+(\d+,?\d+)\s+kreditů"
 PATTERN_TIP = r"Spropitné pro kurýra.*?(\d+,\d+)\sKč"
 PATTERN_DELIVERY_FEE = r"Doprava.*?(\d+,\d+)\sKč"
 PATTERN_TOTAL_PRICE = r"Celkem.*?(\d+\s?\d+,\d+)\sKč"

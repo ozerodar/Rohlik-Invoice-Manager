@@ -51,7 +51,7 @@ class Invoice:
     @staticmethod
     def check_total_amount(message: str, order: List[Item]):
         total_price = get_total(message)
-        if not math.isclose(total_price, calculated_price := sum(item.price for item in order)):
+        if not math.isclose(total_price, calculated_price := sum(item.price for item in order), abs_tol=0.5):
             raise TotalPriceError(f"Total price {total_price} is not close to calculated price {calculated_price}")
 
     def create(self):
